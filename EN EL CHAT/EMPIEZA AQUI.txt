@@ -1,0 +1,84 @@
+═══════════════════════════════════════════════════════════════════════
+ MAPEO SISTEMÁTICO DE LITERATURA CON IA
+ Cómo hacerlo en el chat, con una cuenta gratuita de Claude
+═══════════════════════════════════════════════════════════════════════
+
+No hay que instalar nada. No hace falta cuenta de pago.
+Solo necesitas tu export de Scopus en .txt.
+
+
+SON DOS PASOS, Y VAN EN ORDEN
+─────────────────────────────
+
+   Carpeta "PASO 1 - EL RETRATO"
+        Mira todo tu corpus y te dice qué hay dentro.
+        Nueve láminas: cuándo se escribió, de qué habla, dónde se
+        estudia, con qué, qué dicen que falta, por dónde empezar a leer.
+
+   Carpeta "PASO 2 - LA MATRIZ"
+        Organiza ese mismo corpus: una tabla que filtras, un grafo que
+        se construye por capas, una ficha por paper y el canon de lo
+        que tu campo más lee.
+
+El paso 2 NO funciona solo. Necesita lo que deja el paso 1.
+
+
+ENTRA EN LA CARPETA "PASO 1 - EL RETRATO" Y LEE SU LEEME.
+Cada carpeta tiene dentro exactamente lo que hay que subir y lo que
+hay que pegar. Nada más.
+
+
+LOS DOS DATOS QUE CONVIENE TENER A MANO
+───────────────────────────────────────
+
+  · Tu export de Scopus en .txt, con resúmenes y palabras clave
+    de autor. Si puedes, exporta también LAS REFERENCIAS: el archivo
+    pesa cuatro veces más y a cambio el paso 2 te da quién cita a
+    quién dentro de tu corpus, y el canon del campo.
+
+  · Tu ecuación de búsqueda: los términos que escribiste en Scopus.
+    Solo los términos — quita los LIMIT-TO de idioma, tipo de
+    documento o área.
+
+    NO ES UN ADORNO. Sin ella, tus propios términos de búsqueda
+    salen en la lámina de temas como si fueran hallazgos del campo.
+    Si buscaste household*, va a salir "household" de tema estrella,
+    y eso no es un tema: es tu filtro devuelto.
+
+
+DOS REGLAS QUE EXPLICAN TODO LO QUE VAS A VER
+─────────────────────────────────────────────
+
+  1. EL MODELO NUNCA LEE TU CORPUS. LO LEE UN SCRIPT.
+     Ninguno de estos corpus cabe en la memoria de una IA. Contar es
+     del script; la IA orquesta y te ayuda a leer el resultado. Por
+     eso dos corridas del mismo archivo dan exactamente lo mismo, y
+     por eso puedes auditar cualquier cifra.
+
+  2. EL ARTEFACTO NO ESPECULA.
+     Dice el hecho —"3 papers de América Latina declaran esta
+     teoría"— y ahí se detiene. No te va a sugerir qué investigar:
+     eso lo pones tú.
+
+     Y su consecuencia: cuando algo no se puede calcular, SE DECLARA.
+     Si ves "n = ?", un aviso de base delgada o una pestaña que dice
+     "vacío", no está roto. Te está diciendo qué no sabe.
+
+
+SI ALGO NO SALE
+───────────────
+
+La IA te describe el .txt en vez de correr el script
+      Dile: "no leas el archivo, ejecuta el script con Python".
+
+Gemini
+      No sirve. No ejecuta código de forma fiable, y lo peor es que
+      no falla: contesta otra cosa con aspecto normal.
+
+Tu red bloquea la subida de archivos
+      Pasa en algunas redes institucionales. Prueba con los datos
+      del móvil.
+
+Se te acabó la cuota de la cuenta gratuita
+      Espera a que se renueve, o usa el cuaderno de Colab que está
+      en la carpeta de arriba: es gratis y no tiene límite de uso.

@@ -1,0 +1,48 @@
+═══════════════════════════════════════════════════════════════════════
+ PASO 1 · EL RETRATO DEL CORPUS
+═══════════════════════════════════════════════════════════════════════
+
+EN ESTA CARPETA HAY DOS ARCHIVOS:
+
+   retrato_unico.py     ← ESTO se sube al chat
+   PROMPT_PASO_1.txt    ← ESTO se copia y se pega
+
+
+QUÉ HACER, EN ORDEN
+───────────────────
+
+1. Abre un chat nuevo en claude.ai.
+   (Sirve una cuenta GRATUITA. No hace falta instalar nada.)
+
+2. Sube DOS archivos en el mismo mensaje:
+
+      · tu export de Scopus en .txt
+      · retrato_unico.py           ← el de esta carpeta
+
+3. Abre PROMPT_PASO_1.txt, rellena las dos cosas que te pide
+   —tu título y tu ecuación— y pega todo el bloque en el chat.
+
+4. Espera. Un export de 16 MB tarda unos 20 segundos.
+
+5. DESCARGA LOS DOS ARCHIVOS que te devuelve:
+
+      · retrato.html       ← ábrelo en el navegador: son las 9 láminas
+      · retrato_data.json  ← NO LO BORRES. Lo necesita el paso 2.
+
+
+LO MÁS IMPORTANTE
+─────────────────
+
+NO le pidas a la IA que "lea" tu .txt y te haga el retrato. No puede:
+son millones de palabras. Leería un pedazo e INVENTARÍA el resto, y te
+saldrían nueve láminas impecables y falsas.
+
+El prompt le dice que EJECUTE el script. El script cuenta tu archivo
+entero, línea por línea. La IA solo lo ejecuta y te ayuda a leerlo.
+
+
+NO CIERRES ESA CONVERSACIÓN
+───────────────────────────
+
+El paso 2 se hace AHÍ MISMO, en el mismo chat. Así no hay que volver a
+subir nada pesado.

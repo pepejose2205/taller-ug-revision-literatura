@@ -1,0 +1,71 @@
+═══════════════════════════════════════════════════════════════════════
+ PASO 2 · LA MATRIZ DE SÍNTESIS
+═══════════════════════════════════════════════════════════════════════
+
+ANTES DE EMPEZAR: el paso 1 tiene que estar hecho.
+La matriz organiza lo que el retrato vio. Sin retrato no hay matriz.
+
+
+EN ESTA CARPETA HAY DOS ARCHIVOS:
+
+   matriz_unico.py      ← ESTO se sube al chat
+   PROMPT_PASO_2.txt    ← ESTO se copia y se pega
+
+
+QUÉ HACER, EN ORDEN
+───────────────────
+
+1. Vuelve a LA MISMA CONVERSACIÓN donde hiciste el retrato.
+   Ahí ya están tu .txt y tu retrato_data.json: no hay que resubirlos.
+
+2. Sube UN archivo:
+
+      · matriz_unico.py            ← el de esta carpeta
+
+3. Copia PROMPT_PASO_2.txt y pégalo. No hay nada que rellenar.
+
+4. Espera unos segundos y descarga:
+
+      · matriz.html    ← ábrelo en el navegador
+
+
+¿Y SI CERRASTE LA CONVERSACIÓN?
+───────────────────────────────
+
+Entonces abre una nueva y sube TRES archivos:
+
+      · tu export de Scopus .txt   ← EL MISMO del paso 1, no otro
+      · retrato_data.json          ← el que descargaste del paso 1
+      · matriz_unico.py
+
+El .txt tiene que ser exactamente el mismo. Las filas se emparejan por
+posición, así que otro export pondría el resumen de otro paper en cada
+fila. Hay un candado que lo detecta y para en seco, pero es más fácil
+no llegar ahí.
+
+
+QUÉ VAS A VER AL ABRIR matriz.html
+──────────────────────────────────
+
+ARRIBA    la lámina de los papers callados: los que no declaran ni
+          terreno, ni instrumento, ni técnica, ni diseño.
+
+EN MEDIO  el grafo, que ARRANCA VACÍO. No es un fallo. Enciende
+          "marco" con los botones de la derecha y ve añadiendo capas.
+
+ABAJO     tres pestañas: la tabla · la ficha de cada paper · el canon
+          (las obras que más lee tu campo, y si están dentro o fuera
+          de tu corpus).
+
+
+DOS COSAS QUE TE VA A DECIR, Y SON NORMALES
+───────────────────────────────────────────
+
+"la columna de constructos va vacía y se declara"
+      Es lo esperado en este paso. Nombrar constructos es un trabajo
+      aparte, que hay que poder revisar a mano.
+
+"sin referencias en este export"
+      Tu .txt se bajó sin la bibliografía de cada paper. No se rompe
+      nada: la pestaña del canon sale igual y te explica qué te estás
+      perdiendo y cómo pedirlo la próxima vez.

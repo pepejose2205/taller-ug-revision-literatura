@@ -1,0 +1,100 @@
+═══════════════════════════════════════════════════════════════════════
+ PASO 2 · LA MATRIZ DE SÍNTESIS
+ En la MISMA conversación donde hiciste el retrato.
+ Sube matriz_unico.py y pega lo de abajo.
+═══════════════════════════════════════════════════════════════════════
+
+Te subí matriz_unico.py. En esta misma conversación ya están el .txt de
+Scopus y el retrato_data.json que generamos antes: los dos hacen falta y
+los encuentra solo.
+
+NO leas el .txt. Tampoco el retrato_data.json, que pesa más de un mega.
+NO vuelvas a correr el retrato: reusa el retrato_data.json que ya está.
+
+Haz exactamente esto:
+
+1. Ejecuta el script con Python, sin argumentos:
+
+   python matriz_unico.py
+
+   Si dice que no encuentra alguno de los dos archivos, no los busques
+   por tu cuenta ni improvises rutas: dime qué falta y para ahí.
+
+2. No modifiques el script. No instala nada y no necesita nada.
+
+3. Muéstrame la salida de consola COMPLETA y literal.
+
+4. NO ABRAS matriz.html. Pesa más de un megabyte y leerlo no te aporta
+   nada: es un archivo para el navegador, no para ti. Solo déjamelo
+   listo para descargar.
+
+5. No cites ninguna cifra que no esté en esa salida de consola. Si te
+   pregunto algo que no está, dime "eso no está en la matriz". Puedes
+   consultar matriz_data.json con un script cuantas veces quieras — con
+   un script, no leyéndolo entero.
+
+Cuando termines, dime en una línea cuántos papers y cuántos conceptos
+tiene la matriz, y si el export traía referencias o no.
+
+═══════════════════════════════════════════════════════════════════════
+ QUÉ VAS A ENCONTRAR AL ABRIR matriz.html
+═══════════════════════════════════════════════════════════════════════
+
+ARRIBA · la lámina de los papers callados
+      Los que no declaran ni terreno, ni instrumento, ni técnica, ni
+      diseño. No son marginales y no reaccionan a los filtros: es un
+      hecho sobre tu corpus, afirmado una vez.
+
+EN MEDIO · el grafo, que ARRANCA VACÍO
+      Los seis botones —marco · técnica · instrum. · diseño · región ·
+      revista— empiezan apagados. Enciende «marco» primero. No es un
+      fallo que esté vacío: 1.196 papers cayendo de golpe no son un
+      mapa, son una mancha.
+
+      Un paper solo se dibuja si cuelga de alguna capa encendida. Por
+      eso el primer clic ya afirma algo: verás cuántos papers de todo
+      tu corpus se cuelgan de una teoría con nombre.
+
+ABAJO · tres pestañas
+      · la tabla   — filtra por las persianas de arriba
+      · la ficha   — un paper: lo que mide, su vacío, sus nulos, y a
+                     quién cita y quién lo cita dentro de tu corpus
+      · el canon   — las obras más leídas por tu campo, con la columna
+                     que importa: si están dentro o fuera de tu corpus
+
+═══════════════════════════════════════════════════════════════════════
+ TRES COSAS QUE EL ARCHIVO TE VA A DECIR, Y CONVIENE ENTENDER
+═══════════════════════════════════════════════════════════════════════
+
+"la columna de constructos va vacía y se declara"
+      Es lo normal en este paso. Nombrar los constructos exige que un
+      modelo lea una muestra de oraciones y escriba una ficha, y esa
+      ficha hay que poder auditarla. Es un paso aparte, no algo que se
+      esconde dentro de este prompt.
+
+"sin referencias en este export"
+      Tu .txt se bajó sin la lista de obras que cita cada paper. No se
+      rompe nada: la pestaña del canon sale igual y te explica qué te
+      estás perdiendo y cómo pedirlo la próxima vez. En un corpus de
+      prueba, 41 de las 50 obras más leídas estaban FUERA del corpus:
+      eso es lo que no ves sin referencias.
+
+"solo cuadra el N% de los DOI"
+      Es el candado 0 del paso 2 y está haciendo su trabajo: el .txt no
+      es el mismo que corrió el retrato. Las filas se emparejan por
+      posición, así que un .txt distinto pondría el resumen de otro
+      paper en cada fila sin que nada lo delatara en pantalla. Por eso
+      para en seco en vez de dibujar algo bonito y falso.
+
+═══════════════════════════════════════════════════════════════════════
+ SI EMPIEZAS UNA CONVERSACIÓN NUEVA
+═══════════════════════════════════════════════════════════════════════
+
+Entonces hay que subir TRES archivos, y el .txt tiene que ser
+exactamente el mismo del paso 1:
+
+      · tu export de Scopus .txt      (el mismo, no otro)
+      · retrato_data.json             (el que descargaste del paso 1)
+      · matriz_unico.py
+
+Es más cómodo hacerlo todo en la misma conversación.

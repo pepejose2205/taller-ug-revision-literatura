@@ -1,0 +1,90 @@
+═══════════════════════════════════════════════════════════════════════
+ PASO 1 · EL RETRATO DEL CORPUS
+ Copia todo lo de abajo y pégalo en el chat, después de subir los dos
+ archivos: tu .txt de Scopus y retrato_unico.py
+═══════════════════════════════════════════════════════════════════════
+
+Te subí dos archivos: un export de Scopus en .txt y un script de Python
+llamado retrato_unico.py.
+
+NO leas el .txt. No lo abras, no lo resumas, no lo muestres. Son millones
+de palabras y no caben; si intentas leerlo vas a terminar inventando
+cifras. El script lo cuenta entero, línea por línea, y esa es la única
+fuente de números válida en esta conversación.
+
+Haz exactamente esto:
+
+1. Ejecuta el script con Python, pasándole mi .txt como primer argumento,
+   así (sustituye el nombre del .txt por el real):
+
+   python retrato_unico.py "MI_ARCHIVO.txt" --titulo "AQUÍ TU TÍTULO" --ecuacion "AQUÍ TU ECUACIÓN"
+
+2. No modifiques el script. No le cambies nada, no lo "mejores", no lo
+   reescribas, no instales nada: no necesita ninguna librería externa,
+   solo Python 3.9 o superior. Si algo falla, muéstrame el error completo
+   tal cual y para ahí.
+
+3. Muéstrame la salida de consola COMPLETA y literal, sin resumirla. Ahí
+   va el censo de cada capa, y es lo que necesito ver.
+
+4. Deja listos para descargar los dos archivos que escribe:
+      · retrato.html       ← lo abro en el navegador
+      · retrato_data.json  ← NO lo borres, lo necesita el paso 2
+
+5. A partir de aquí, no cites ninguna cifra que no esté en esa salida de
+   consola o dentro de retrato.html. Si te pregunto algo que no está ahí,
+   dime "eso no está en el retrato" en vez de estimarlo. Puedes volver a
+   consultar el retrato_data.json con un script cuantas veces quieras.
+
+Cuando termines, dime en una línea cuántos papers se parsearon y de qué
+años va el corpus. Nada más: el resto lo leo yo en el HTML.
+
+═══════════════════════════════════════════════════════════════════════
+ LOS DOS DATOS QUE TIENES QUE RELLENAR
+═══════════════════════════════════════════════════════════════════════
+
+--titulo      Cuatro o cinco palabras que digan de qué es tu corpus.
+              Es lo primero que se ve al abrir el retrato.
+              Ejemplo:  "Desperdicio de alimentos en hogares"
+
+--ecuacion    La ecuación con la que bajaste el export de Scopus.
+              SOLO LOS TÉRMINOS. Quita los LIMIT-TO de idioma, tipo de
+              documento o área: no aportan ninguna palabra y solo
+              ensucian la cabecera.
+
+              Ejemplo, ya limpio:
+              TITLE-ABS-KEY ( ( "food waste" OR "food wastage" OR "food loss*" OR "waste prevention" ) AND ( household* OR domestic OR consumer* OR "at home" ) )
+
+              POR QUÉ IMPORTA, y no es cosmético: sin ella, tus propios
+              términos de búsqueda salen en la lámina de temas como si
+              fueran hallazgos del campo. Si buscaste household*, va a
+              salir "household" de tema estrella — y no es un tema, es tu
+              filtro devuelto. Medido sobre el corpus del taller:
+              declarándola, el script aparta 23 términos en vez de 16, y
+              en su lugar entran cuatro objetos de verdad, uno de ellos
+              "theory of planned behavior".
+
+              Si no la recuerdas, córrelo igual. Solo que la lámina de
+              temas hay que leerla sabiendo que esos términos están ahí
+              porque los pediste.
+
+═══════════════════════════════════════════════════════════════════════
+ SI ALGO SALE MAL
+═══════════════════════════════════════════════════════════════════════
+
+"no se parseó ningún registro"
+      El .txt no es un export de Scopus, o se exportó en otro formato.
+      Tiene que ser .txt, con resúmenes y palabras clave de autor.
+
+Para en seco y dice "ALTO"
+      Es el candado 0 haciendo su trabajo: el archivo no trae lo mínimo
+      para hacer un retrato honesto (por ejemplo, ningún resumen).
+      Vuelve a exportar marcando resúmenes y palabras clave.
+
+La IA empieza a describirte el .txt en vez de correr el script
+      Se lo tragó como texto. Dile: "no leas el archivo, ejecuta el
+      script con Python". Si insiste, esa IA no sirve para esto.
+
+Tarda mucho
+      Es normal. Un export de 16 MB tarda unos 18 segundos; uno de
+      100 MB, unos dos minutos y medio.
